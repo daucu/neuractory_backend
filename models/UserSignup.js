@@ -7,21 +7,6 @@ const user_sehema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  username: {
-    type: String,
-    required: true,
-  },
-  phone: {
-    type: String,
-    reqired: true,
-  },
-  country: {
-    type: String,
-  },
-  address: {
-    type: String,
-    reqired: true,
-  },
   email: {
     type: String,
     required: true,
@@ -30,6 +15,14 @@ const user_sehema = new mongoose.Schema({
     type: String,
     reqired: true,
   },
+  phone: {
+    type: String,
+    reqired: true,
+  },
+  country: {
+    type: String,
+  },
+
   image: {
     type: String,
   },

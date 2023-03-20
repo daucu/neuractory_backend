@@ -108,11 +108,9 @@ router.post(
 
     const user = new User_Schema({
       name: req.body.name,
-      username: req.body.username,
-      phone: req.body.phone,
-      address: req.body.address,
       email: req.body.email,
       password: hashed_password,
+      phone: req.body.phone,
       country: req.body.country,
       // code to genereate unique key for user for 8 digit
       uniqueKey: randomString(15),
@@ -195,15 +193,6 @@ async function SignupValidation(req, res, next) {
     return res
       .status(400)
       .json({ message: "Email is not valid ", status: "error" });
-
-  //Check username is valid
-  const username = req.body.username;
-  const username_regex = /^[a-zA-Z0-9]{3,20}$/;
-  if (!username_regex.test(username))
-    return res.status(400).json({
-      message: "Username is not valid",
-      status: "error",
-    });
 
   // check password is not null
   if (req.body.password == null)
