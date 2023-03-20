@@ -42,15 +42,7 @@ router.post("/", async (req, res) => {
       secure: true,
     });
 
-    // set localstorage
-    res.locals.user = {
-      id: user._id,
-      email: user.email,
-      Headers: {
-        token: token,
-      },
-    };
-
+     
     res.status(200).json({
       message: "login success",
       status: "success",
