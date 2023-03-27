@@ -57,6 +57,9 @@ app.use("/api/orders", require("./routes/Order"));
 // razor pay instance order api
 app.use("/api/payment", require("./routes/payment"));
 
+// contact us messages api
+app.use("/api/contactus", require("./routes/contactus"));
+
 app.listen(PORT, () => {
   console.log(`server is running on the new ${PORT}`);
 });
