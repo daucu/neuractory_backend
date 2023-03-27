@@ -21,6 +21,8 @@ const allowedOrigins = [
   "http://localhost:4001",
   "http://localhost:4000",
   "https://provrblue.vercel.app",
+  "https://neuractory.ai",
+  "https://www.neuractory.ai",
 ];
 
 //CORS policy access
