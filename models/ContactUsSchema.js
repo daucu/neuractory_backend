@@ -8,6 +8,10 @@ const contactusSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  phonenumber: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
   },

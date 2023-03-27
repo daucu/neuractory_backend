@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
     const contactus = new ContactUsSchema({
       name: req.body.name,
       email: req.body.email,
+      phonenumber: req.body.phonenumber,
       date: req.body.date,
       time: req.body.time,
       message: req.body.message,
